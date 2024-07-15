@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Cambiado a 100% del viewport height */
+    width: 220px; /* Aumentado el ancho del sidebar */
+    background-color: #00aae4;
+    padding: 1rem; /* Ajuste en el padding */
+    display: flex;
+    flex-direction: column; /* Asegura un layout vertical */
+}
+
+.sidebar .top .logo {
+    color: white;
+    display: flex;
+    flex-direction: column; /* Cambiar a disposición vertical */
+    align-items: center;
+    pointer-events: none;
+}
+
+.sidebar .top .logo .vet-name {
+    font-size: 1.5rem; /* Tamaño del nombre de la veterinaria */
+    margin-top: 0.5rem; /* Espacio entre el logo y el nombre */
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    height: 50px;
+    margin-bottom: 0.5rem; /* Espacio entre elementos de la lista */
+}
+
+.sidebar ul li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    padding: 0.5rem; /* Ajuste en el padding */
+    font-size: 1.9rem;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+}
+
+.sidebar ul li a:hover {
+    background-color: white;
+    color: #12171e;
+}
+.sidebar .bottom {
+    margin-top: auto; /* Empuja el contenido hacia la parte inferior */
+}
+
+.sidebar .bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .bottom ul li {
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+.sidebar .bottom ul li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    padding: 0.5rem;
+}
+
+.sidebar .bottom ul li a:hover {
+    background-color: white;
+    color: #12171e;
+}
